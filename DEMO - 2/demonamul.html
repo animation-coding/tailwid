@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <!--:::::::::::::::::::::-Header-::::::::::::::::::::-->
+    <header class="w-full fixed top-0 left-0  bg-[#090a1a] z-[999] flex justify-between items-center h-16 lg:px-0 px-4">
+
+        <a class="text-white block md:hidden" href="#" id="menuOpen">
+            <img src="assets/img/ac.png" class="h-7 sm:h-9" alt="logo" />
+        </a>
+        <!--open button-->
+        <button class="text-white cursor-pointer block md:hidden" id="nav-toggle">
+            <i class="fi fi-rr-apps"></i>
+        </button>
+
+        <nav class="w-full hidden fixed lg:px-0 left-0 md:block top-0 bg-[#090a1a] lg:bg-transparent md:h-auto md:py-0 h-screen py-5 px-2 z-[100]"
+            id="nav-menu">
+            <div
+                class="max-w-5xl md:h-auto md:flex md:flex-wrap md:justify-between md:items-center md:mx-auto mx-6 grid gap-8 md:gap-0 lg:gap8 h-full">
+                <!--close button-->
+                <button class="text-white text-xl block absolute right-6 p-1 cursor-pointer md:hidden"
+                    id="menu_hide_btn">
+                    *
+                </button>
+
+                <div>
+                    <a href="#" class="flex items-center">
+                        <img src="assets/img/ac.png" class="h-6 sm:h-9" alt="logo" />
+                    </a>
+                    <p class="text-white text-base font-semibold cursor-pointer md:hidden">
+                        Youtuber
+                    </p>
+                </div>
+                <div class="flex md:order-2 order-1">
+                    <button type="button"
+                        class="text-white h-fit bg-[#647bff] hover:text-[#647bff] relative overflow-hidden z-10 btn__hover focus:outline-none font-medium rounded-lg text-sm px-6 py-3 text-center mr-3 md:mr-0">
+                        Hire Me
+                    </button>
+                </div>
+                <div class="nav__menu justify-between items-center w-full md:flex md:w-auto md:order-1">
+                    <ul class="flex flex-col p-4 mt-4 md:flex-row md:mt-0 md:text-base md:font-medium">
+                        <li class="my-4 mx-1 md:my-0">
+                            <a href="#home"
+                                class="block md:py-1 md:px-4 text-white md:hover:bg-[#647bff] md:hover:bg-opacity-[0.161] md:hover:text-[#647bff] hover:text-[#647bff] rounded">
+                                Home
+                            </a>
+                        </li>
+                        <li class="my-4 mx-1 md:my-0">
+                            <a href="#about"
+                                class="block md:py-1 md:px-4 text-white md:hover:bg-[#647bff] md:hover:bg-opacity-[0.161] md:hover:text-[#647bff] hover:text-[#647bff] rounded">About</a>
+                        </li>
+                        <li class="my-4 mx-1 md:my-0">
+                            <a href="#services"
+                                class="block md:py-1 md:px-4 text-white md:hover:bg-[#647bff] md:hover:bg-opacity-[0.161] md:hover:text-[#647bff] hover:text-[#647bff] rounded">
+                                Services
+                            </a>
+                        </li>
+                        <li class="my-4 mx-1 md:my-0">
+                            <a href="#protfolio"
+                                class="block md:py-1 md:px-4 text-white md:hover:bg-[#647bff] md:hover:bg-opacity-[0.161] md:hover:text-[#647bff] hover:text-[#647bff] rounded">
+                                Protfolio
+                            </a>
+                        </li>
+                        <li class="my-4 mx-1 md:my-0">
+                            <a href="#contact"
+                                class="block md:py-1 md:px-4 text-white md:hover:bg-[#647bff] md:hover:bg-opacity-[0.161] md:hover:text-[#647bff] hover:text-[#647bff] rounded">
+                                Contact
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!--::::::::::::::::::-hero section-::::::::::::::::::-->
+    <section class="lg:bg-[url('./assets/img/bg.png')] bg-[#090a1a] relative p-6 mx-auto pb-14 pt-20 lg:pt-32"
+        id="home">
+        <div
+            class="max-w-7xl relative flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-48 lg:flex-row lg:justify-between">
+            <div
+                class="flex flex-col mt-8 justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
+                <h1 class="text-2xl font-normal leading-none lg:text-4xl text-white">
+                    I'M
+                    <br>
+                    Animation
+                    <span class="font-semibold">
+                        Coding
+                    </span>
+
+                </h1>
+                <span class="mt-3 lg:mx-0 mx-auto w-24 h-[3px] bg-gray-200 rounded"></span>
+                <p class="mt-2 mb-8 text-lg sm:mb-12 text-white">
+                    Dictum aliquam porta in condimentum ac integer
+                    <br class="hidden md:inline lg:hidden">turpis pulvinar, est
+                    scelerisque ligula sem
+                </p>
+                <div class="flex justify-center space-y-4 flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
+                    <a href="#"
+                        class="flex items-center text-white px-5 py-3 text-sm font-normal rounded bg-[#647bff] hover:bg-[#fff] hover:text-[#647bff]">
+                        <i class="fi fi-rr-apps flex mr-2"></i> Download CV
+                    </a>
+
+                </div>
+            </div>
+            <div class="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+                <img src="assets/img/man.png" alt="" class="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+            </div>
+
+            <div class="absolute flex right-0 justify-center items-center gap-4 mt-6 lg:rotate-90">
+                <span class="text-gray-400 text-sm  font-semibold tracking-widest w-max">
+                    Follow me
+                </span>
+                <span class="w-12 h-[3px] bg-gray-200 rounded"></span>
+
+                <div class="flex gap-4">
+                    <a href="#" class="text-gray-400 hover:text-gray-500 active:text-gray-600 transition duration-100">
+                        <i class="fi fi-rr-apps"></i>
+                    </a>
+
+                    <a href="#" class="text-gray-400 hover:text-gray-500 active:text-gray-600 transition duration-100">
+                        <i class="fi fi-rr-apps"></i>
+                    </a>
+
+                    <a href="#" class="text-gray-400 hover:text-gray-500 active:text-gray-600 transition duration-100">
+                        <i class="fi fi-rr-apps"></i>
+                    </a>
+
+                    <a href="#" class="text-gray-400 hover:text-gray-500 active:text-gray-600 transition duration-100">
+                        <i class="fi fi-rr-apps"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!--::::::::::::::::-Portfolio section-:::::::::::::::-->
+    <section class="bg-[#090a1a] mx-auto pb-14 pt-20 lg:pt-32 lg:pb-28 overflow-hidden" id="protfolio">
+        <div class="flex justify-center text-center mb-20 mt-4 mx-auto">
+            <h2 class="text-white font-bold select-none	relative inline-block uppercase text-xl md:text-4xl z-10">
+                My
+                <span class="text-[#647bff]">Portfolio</span>
+                <span
+                    class="absolute left-2/4 top-2/4 text-5xl md:text-6xl lg:text-8xl -translate-x-2/4 -translate-y-2/4 z-[-1] opacity-10">
+                    Portfolio
+                </span>
+            </h2>
+        </div>
+
+        <div class="max-w-7xl mt-4 relative mx-auto ">
+        </div>
+
+    </section>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.2.4/swiper-bundle.min.js"></script>
+    <script src="assets/js/js.js"></script>
+
+    <script>
+        const nav_menu = document.getElementById("nav-menu");
+        const menu_show_btn = document.getElementById("nav-toggle");
+        const menu_hide_btn = document.getElementById("menu_hide_btn");
+        const show_menu = "show_menu";
+
+
+        menu_show_btn.addEventListener("click", funShow);
+        menu_hide_btn.addEventListener("click", funHide);
+
+        function funShow() {
+            nav_menu.classList.add(show_menu);
+        }
+
+        function funHide() {
+            nav_menu.classList.remove(show_menu);
+        }
+
+    </script>
+</body>
+
+</html>
